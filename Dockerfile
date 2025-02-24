@@ -7,7 +7,7 @@ COPY . ${WORK_DIR}
 
 USER 0
 
-RUN microdnf install -y dnf && dnf update -y && dnf install -y maven
+RUN microdnf install -y dnf && dnf update -y && dnf install -y maven && dnf install ping -y
 
 RUN ["mvn", "-DskipTests", "clean", "install"]
 

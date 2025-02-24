@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/hello")
 public class HelloController {
 
-    @Value("${spring.datasource.url}")
+    @Value("${teste.ok.db}")
     private String url;
 
     public static final	String ENV_APP_ID = System.getenv("app.id");

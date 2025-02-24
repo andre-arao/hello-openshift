@@ -1,16 +1,18 @@
 spring:
-  datasource:
-    username: ${DB_HELLO_USER}
-    password: ${DB_HELLO_PASS}
-    url: ${DB_HELLO_URL}
-    driver-class-name: org.postgresql.Driver
-    hikari:
-      maximum-pool-size: 10
-  jpa:
-    hibernate:
-      ddl-auto: update
-    properties:
-      hibernate.dialect: org.hibernate.dialect.PostgreSQLDialect
-    show-sql: true
+#  datasource:
+#    username: ${DB_HELLO_USER}
+#    password: ${DB_HELLO_PASS}
+#    url: ${DB_HELLO_URL}
+#    driver-class-name: org.postgresql.Driver
+#    hikari:
+#      maximum-pool-size: 10
+#  jpa:
+#    hibernate:
+#      ddl-auto: update
+#    show-sql: true
   application:
     name: Aplicacao piloto Hello
+
+teste:
+  ok:
+    db: ${DB_HELLO_URL}
