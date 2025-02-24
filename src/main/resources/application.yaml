@@ -18,6 +18,9 @@ spring:
   application:
     name: Aplicacao piloto Hello
 
+server:
+  port: 8443
+
 teste:
   ok:
     db: ${DB_HELLO_URL}
