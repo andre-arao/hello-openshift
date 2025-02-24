@@ -13,6 +13,6 @@ RUN ["mvn", "-DskipTests", "clean", "install"]
 
 USER 185
 
-EXPOSE 8080
+EXPOSE 8080 8443
 
 CMD ["java", "-jar", "target/hello-0.0.1-SNAPSHOT.jar"]
