@@ -19,7 +19,7 @@ spring:
     name: Aplicacao piloto Hello
 
 server:
-  port: 8443
+  port: 8080
 
 teste:
   ok:
