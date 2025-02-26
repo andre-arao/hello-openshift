@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/hello")
 public class HelloController {
 
-    @Value("${teste.ok.db}")
+    @Value("${spring.datasource.url}")
     private String url;
 
     public static final	String ENV_APP_ID = System.getenv("app.id");
@@ -17,8 +17,8 @@ public class HelloController {
 
     @GetMapping
     public String hello(){
-        return "Hello " +
-                "Valor da variavel no application.yaml: " + url +
-                "Valor da variavel direto do OpenShift: " + ENV_APP_ID + ENV_APP_NAME;
+        return "<br>Hello " +
+                "<br>Valor da variavel no application.yaml: " + url +
+                "<br>Valor da variavel direto do OpenShift: " + ENV_APP_ID + ENV_APP_NAME;
     }
 }
